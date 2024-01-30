@@ -17,7 +17,7 @@ function orderResultsPage(props) {
   }
 
   const productsRow = props.order.products.map((x) => (
-    <tr>
+    <tr key={x.id}>
       <td>{x.title}</td>
       <td>{x.qty}</td>
       <td>{currency(x.unitPrice)}</td>

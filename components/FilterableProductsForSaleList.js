@@ -17,7 +17,7 @@ function ProductListItem(props) {
 
   return (
     <div className="d-flex position-relative border my-2">
-      <img src={defaultProductImage} className="flex-shrink-0 me-3" />
+      <img src={defaultProductImage} className="flex-shrink-0 me-3" alt="" />
       <div>
         <Link href={`/products/${props.product.code}`} className="stretched-link">
           <h3 className="mt-0">{props.product.title}</h3>

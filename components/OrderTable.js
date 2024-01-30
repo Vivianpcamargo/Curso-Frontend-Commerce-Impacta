@@ -33,7 +33,7 @@ function OrderRow(props) {
 }
 
 function OrderTable(props) {
-  const rows = props.orders.map((order) => <OrderRow order={order} />);
+  const rows = props.orders.map((order) => <OrderRow order={order} key={order.id} />);
 
   return (
     <table className="table table-bordered table-responsive">

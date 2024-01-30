@@ -12,7 +12,7 @@ function Item(props) {
     <div className="container my-2">
       <div className="row">
         <div className="col-2">
-          <img src={defaultProductImage} className="img-thumbnail" />
+          <img src={defaultProductImage} className="img-thumbnail" alt="" />
         </div>
         <div className="col-6 py-5">
           <h5>{props.product.title}</h5>
