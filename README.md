@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# :bookmark: Curso-Frontend-Commerce-Impacta
 
-## Getting Started
+:label: Tecnologia Principal: Javascript
+<br> :bricks: Framework: Next
+<br> :cloud: Nuvem: Vercel
+<br> :page_facing_up: Padronização: ESLint
+<br> :book: Documentação: <a href='https://www.figma.com/design/fC0Pe4EzKYvZvYQtQeA8zo/Commerce-Impacta?node-id=0-1&t=c1RIwkVFejcvGl1Z-1'> Figma </a>
 
-First, run the development server:
+## :dart: Sobre
 
-```bash
+Curso com o objetivo de atuar no frontend de um e-commerce fictício na disciplica Framework Full Stack da Faculdade Impacta.
+
+## :bar_chart: Rodando
+
+### :test_tube: Exemplos de uso
+
+- iniciar no modo de desenvolvimento:
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- construir o aplicativo para uso em produção:
+```
+npm run build
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- iniciar um servidor de produção:
+```
+npm run start
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- configurar o ESLint no Next.js:
+```
+npm run lint
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## :door: Portas do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### :label: Aplicação
 
-## Learn More
+http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+`/carts`
+* `GET /carts/:cart_id`
+* `PUT /carts/:cart_id`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`/orders`
+* `GET /orders/`
+* `GET /orders/:order_id`
+* `POST /orders/`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`/products`
+* `GET /products`
